@@ -1,0 +1,96 @@
+<ion-content>
+
+  <!-- Regreso a home -->
+
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button default-href="#" [routerLink]="['/home']"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="confi">Configuracion</ion-title>
+  </ion-toolbar>
+
+  <!-- Fin Regreso a home -->
+
+
+  <!-- Configuracion de Perfil de usuario -->
+  <ion-item class="perfil">
+    <ion-avatar slot="start">
+      <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+    </ion-avatar>
+    <ion-label> Wilkerson Gómez </ion-label>
+    <p>
+      <ion-icon name="chevron-forward-outline"></ion-icon>
+    </p>
+  </ion-item>
+  <!-- Fin Configuracion de Perfil de usuario -->
+
+  <ion-item class="h1Cue" color="dark">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <h1>Cuenta</h1>
+  </ion-item>
+
+  <ion-item class="txtPlanesPre " color="dark">
+    <ion-label>
+      <h1>Plan Premium</h1>
+      <p>Ver tu Plan</p>
+    </ion-label>
+  </ion-item>
+
+  <ion-item class="h1Cue" color="dark">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <h1>Modo Ahorro de datos</h1>
+  </ion-item>
+
+  <ion-item class="txtPlanesPre" color="dark">
+    <ion-label>
+      <h1>Ahorrar datos</h1>
+      <p>Establece la calidad del audio en baja</p>
+      <ion-toggle aria-label="Tertiary toggle" color="tertiary" [checked]="true" id="ahorrodato"></ion-toggle>
+      <ion-toast trigger="ahorrodato" message="Ahorro de Dato Activado" [duration]="3000"
+        icon="leaf-outline"></ion-toast>
+
+
+    </ion-label>
+  </ion-item>
+
+  <ion-item class="h1Cue" color="dark">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <h1>Almacenamiento</h1>
+  </ion-item>
+
+  <!-- Almacenamiento -->
+  <ion-card color="dark">
+    <ion-card-header>
+      <ion-card-title>Otras Aplicaciones</ion-card-title>
+      <ion-card-subtitle>37.2 GB</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card color="warning">
+    <ion-card-header>
+      <ion-card-title>Descargas</ion-card-title>
+      <ion-card-subtitle>793.0 MB</ion-card-subtitle>
+    </ion-card-header>
+
+  </ion-card>
+
+  <ion-card color="tertiary">
+    <ion-card-header>
+      <ion-card-title>Caché</ion-card-title>
+      <ion-card-subtitle>449.0 MB</ion-card-subtitle>
+    </ion-card-header>
+
+  </ion-card>
+
+  <ion-card color="success">
+    <ion-card-header>
+      <ion-card-title>Gratis</ion-card-title>
+      <ion-card-subtitle>12.9 GB</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+
+  <!--Fin Almacenamiento -->
+
+
+
+</ion-content>

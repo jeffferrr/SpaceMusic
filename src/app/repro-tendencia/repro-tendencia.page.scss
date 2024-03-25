@@ -1,0 +1,138 @@
+.headerOneOne {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .headerOne {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  
+  .titleOne {
+    font-size: 1.5rem;
+  }
+  
+  .mi-clase{
+    color: black;
+  }
+  
+  .gg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .player {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cover-border {
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: red;
+    width: 75%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cover {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .title, .artist {
+    margin-top: 1rem;
+    color: black;
+  }
+  .player{
+    border-radius: 20%;
+    background-color: white;
+    height: 100%;
+    border-radius: 60px 60px 0 0; 
+  }
+  
+  .progress {
+    position: relative;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .progress svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .progress-circle {
+    fill: none;
+    stroke-width: 5;
+    stroke-linecap: round;
+  }
+  
+  .progress-circle__background {
+    stroke: #dfe3e6;
+  }
+  
+  .progress-circle__progress {
+    stroke: #007aff;
+    transition: stroke-dashoffset 0.3s;
+  }
+  .progress {
+    position: relative;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .progress svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .progress-circle {
+    fill: none;
+    stroke-width: 5;
+    stroke-linecap: round;
+  }
+  .progress-circle__background {
+    stroke: #e6e2df;
+  }
+  .progress-circle__progress {
+    stroke: #007aff;
+  }
+  .progress-handle {
+    fill: #007aff;
+    position: center;
+  }
+  ion-content{
+    --background: rgb(15, 0, 87);
+  }
+  .material-icons {
+    font-family: 'Material Icons';
+  }
+  ion-toast{
+    text-align: center;
+    max-width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .svGG{
+    max-width: 200px;
+    left: 150%;
+  }
+  ion-button {
+    --border-radius: 50px;
+  }

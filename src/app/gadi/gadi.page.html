@@ -1,0 +1,63 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<ion-content [fullscreen]="true">
+  <div class="headerOneOne">
+    <div class="headerOne">
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="#"></ion-back-button>
+      </ion-buttons>
+      <ion-title class="titleOne">Space Music</ion-title>
+    </div>
+  </div>
+<ion-content class="gg">
+  <div class="player">
+    <ion-row class="ion-justify-content-center" style="margin-top: -80px;">
+    <div class="progress">
+      <svg width="200" height="200" border-radius="50%" viewBox="0 0 200 200" class="svGG">
+        <image href="https://www.bing.com/images/blob?bcid=TqXI2KzStfwFj6dBpC3TbL16ZDv0.....5w" x="10" y="10" width="180" height="180"></image>
+          <circle class="progress-circle progress-circle__background" cx="100" cy="100" r="90"></circle>
+          <circle #progressCircle class="progress-circle progress-circle__progress" cx="100" cy="100" r="90"></circle>
+          <circle #progressHandle touch-action="none" class="progress-handle" cx="100" cy="10" r="7"></circle>
+      </svg>
+    </div>
+  </ion-row>
+      <h1 class="title">{{ songs[currentSongIndex].title }}</h1>
+      <h3 class="artist">{{ songs[currentSongIndex].artist }}</h3>
+      <div>
+        <ion-row class="ion-justify-content-center" style="margin-top: 50px;">
+            <ion-button fill="clear" (click)="previous()" style="margin-right: 15px;">
+              <ion-icon name="play-back" [class.mi-clase]="true"></ion-icon>
+            </ion-button>
+            <ion-fab-button fill="clear" (click)="togglePlay()" [class.mi-clasegg]="true">
+              <ion-icon [name]="isPlaying ? 'pause' : 'play'"></ion-icon>
+            </ion-fab-button>
+            <ion-button fill="clear" (click)="next()" style="margin-left: 15px;">
+              <ion-icon name="play-forward" [class.mi-clase]="true"></ion-icon>
+            </ion-button>
+        </ion-row>
+        <ion-row class="ion-justify-content-center" style="margin-top: 30px;">
+          <ion-col>
+            <ion-button fill="clear">
+              <i class="material-icons" [class.mi-clase]="true">bookmark_border</i>
+            </ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button fill="clear" (click)="toggleShuffle()">
+              <i class="material-icons" [class.mi-clase]="true">{{ isShuffle ? 'highlight_off' : 'shuffle' }}</i>
+            </ion-button>
+          </ion-col>
+            <ion-toast [isOpen]="isAleatorio && showAleatorio" message="'Modo aleatorio'" [duration]="2000" (didDismiss)="setOpen(false)" color="dark"></ion-toast>
+          <ion-col>
+            <ion-button fill="clear" (click)="toggleRepeat()">
+              <i class="material-icons" [class.mi-clase]="true">{{ isRepeatOne ? 'repeat_one' : 'repeat' }}</i>
+            </ion-button>
+          </ion-col>
+            <ion-toast [isOpen]="isToastOpen && showMessage" message="'Modo repetición única'" [duration]="2000" (didDismiss)="setOpen(false)" color="dark"></ion-toast>
+          <ion-col>
+            <ion-button fill="clear">
+              <i class="material-icons" [class.mi-clase]="true">queue_music</i>
+            </ion-button>
+          </ion-col>
+        </ion-row> 
+      </div> 
+  </div>
+</ion-content>

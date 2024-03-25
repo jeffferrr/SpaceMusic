@@ -1,0 +1,111 @@
+<ion-content>
+  <div id="header">
+
+    <div class="stars">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+    </div>
+    <div id="app-bar">
+      <div id="logo">
+        <img src="assets/stronauta.png" alt="">
+      </div>
+      <div></div>
+    </div>
+    <h1>Iniciar Sesión</h1>
+  </div>
+
+  <div class="wrapper">
+    <ion-card class="form-wrapper">
+      <ion-card-content class="contenido">
+        <form [formGroup]="formularioLogin">
+          <ion-item>
+            <ion-icon name="person"></ion-icon>
+            <ion-input formControlName="nombre" type="text" placeholder="Nombre" minlength="4"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="lock-closed"></ion-icon>
+            <ion-input formControlName="password" type="password" placeholder="Password" minlength="4"></ion-input>
+          </ion-item>
+
+          <!-- Cuando el usuario ingresus sus datos completos dara clic en iniciar sesion y lo redireccionara a la pagina principal de la app -->
+          <ion-buttons slot="end">
+            <ion-button (click)="ingresar()"><ion-icon name="play-outline"></ion-icon>Iniciar Sesión</ion-button>
+          </ion-buttons>
+          <!-- Redirecciona al usuario ala pagina de registro en dado caso que quiera crear una cuenta -->
+          <ion-buttons slot="end">
+            <ion-button [routerLink]="['/register']"><ion-icon name="person-add-outline"></ion-icon> Ir a
+              registrarme</ion-button>
+          </ion-buttons>
+        </form>
+      </ion-card-content>
+    </ion-card>
+
+    <div class="line-text">
+      <span class="lines"></span>
+      <span class="text">O conectate a travez de:</span>
+    </div>
+
+
+    <ion-card class="social-wrapper">
+      <ion-card-content>
+        <div class="socials">
+          <a href="https://www.facebook.com/"> <ion-button class="btn-fb" id="hola"><ion-icon
+                name="logo-facebook"></ion-icon> </ion-button></a>
+
+          <a
+            href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAlAmgQ&hl=es-419&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-1274602577%3A1690821696198611">
+            <ion-button class="btn-go"><ion-icon name="logo-google"></ion-icon>
+            </ion-button></a>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

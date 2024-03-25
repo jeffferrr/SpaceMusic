@@ -1,0 +1,360 @@
+.fondoartis {
+    background-color: #1F1F1F;
+    width: 100%;
+    height: 30%;
+    border-radius: 15%;
+    margin-top: -15%;
+
+}
+
+.notifica {
+    margin-top: 23%;
+    color: white;
+    font-size: 190%;
+    padding-left: 6%;
+}
+
+.bolsito {
+    margin-top: 23%;
+    color: white;
+    font-size: 190%;
+    padding-left: 70%;
+}
+
+.publi {
+    margin-top: 4%;
+    padding-left: 5%;
+    width: 95%;
+    height: 95%;
+}
+
+.textoDescrip {
+    margin-top: 3%;
+    text-align: center;
+}
+
+.cora {
+    padding-left: 26%;
+    font-size: 170%;
+}
+
+.msg {
+    padding-left: 5%;
+    font-size: 170%;
+}
+
+
+.guarda {
+    padding-left: 38%;
+    font-size: 170%;
+}
+
+.interracionpubli {
+    margin-top: 3%;
+}
+
+.block {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modales {
+    --height: auto;
+}
+
+.nuevo {
+    margin-top: -12%;
+    padding-left: 10%;
+}
+
+.cantcomentarios {
+    margin-top: -13%;
+    padding-left: 10%;
+}
+
+.cantcora {
+    margin-top: -7%;
+    padding-left: 44%;
+}
+
+
+
+
+
+/* carrusel */
+
+.carrusel {
+    background: transparent;
+    padding: 4% 5% 7% 5%;
+    border-radius: 0 0 28px 28px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+
+}
+
+.titlee {
+    height: 100%;
+    font-size: 130%;
+}
+
+ion-card {
+    box-shadow: none;
+    padding: 0%;
+
+    flex: 1 0 auto;
+    view-timeline-name: --image;
+    view-timeline-axis: inline;
+    animation-timeline: --image;
+    animation-name: show;
+    animation-range: entry 15% cover 40%;
+    animation-fill-mode: both;
+
+    ion-card-header {
+        padding: 0%;
+    }
+
+}
+
+.avatar {
+    width: 125%;
+    margin-left: -5%;
+    margin-right: 10%;
+    height: auto;
+}
+
+.container {
+    padding: 6px 20px;
+
+
+    ion-item {
+        padding: 0;
+        margin: 14px 0;
+        font-weight: 600;
+        view-timeline-name: --image;
+        view-timeline-axis: block;
+        animation-timeline: --image;
+        animation-name: show;
+        animation-range: entry 5% cover 20%;
+        animation-fill-mode: both;
+    }
+
+}
+
+.bordecirculo {
+    background: #1F1F1F;
+}
+
+/* fin carrusel */
+
+
+.Compaltan {
+    width: 100%;
+    height: 80px;
+    display: flex;
+}
+
+.codo {
+    --height: auto;
+}
+
+.iconosredcompantal {
+    width: 100%;
+    height: 70px;
+}
+
+.iconos {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    padding-left: 8%;
+    padding-right: 8%;
+
+}
+
+.titulosiconos {
+    font-size: 10%;
+}
+
+.busqueda {
+    margin-top: 8%;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.toolbarss {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 5%;
+}
+
+.titulotoobarconpalta {
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+    font-size: 150%;
+
+}
+
+.fondosalir{
+    background: transparent ;
+}
+
+.postertikets{
+    width: 100%;
+    height: 100%;
+    margin-top: -10%;
+}
+
+.salir{
+    font-size: 180%;
+    color: white;
+}
+
+.fondotinkets{
+    background-color: #1F1F1F;
+    width: 100%;
+    height: 30%;
+    border-radius: 15% 15% 0 0;
+    margin-top: -30%;
+}
+
+.buttonAdd{
+    --background: #6733F6;
+    --background-hover:#6733F6;
+    --background-activated: #6733F6;
+    --background-focused: #6733F6;
+  
+    --color: #6733F6;
+  
+    --border-radius: 0;
+    --border-color: #6733F6;
+    --border-style: solid;
+    --border-width: 1px;
+  
+    --box-shadow: 0 2px 6px 0 #6733F6;
+  
+  
+    --padding-top: 10px;
+    --padding-bottom: 10px;
+
+    color: white;
+    padding-left: 70%;
+    margin-top: 10%;
+    margin-left: 1%;
+    width: 90%; //Ancho
+    height: 60%; //Altura
+}
+.buttonadd{
+    font-size: 200%;
+    padding-left: 77%;
+    color: white;
+    margin-top: -31%;
+}
+
+.Small{
+    --border-radius: 15%;
+    --border-color: #2D2D2D;
+    --border-style: solid;
+    --border-width: 1px;
+    color: white;
+    --background-color: #2D2D2D;
+}
+
+.contenedorSmall{
+    margin-top: -10%;
+    margin-left: 7%;
+}
+
+.Precio{
+    --border-radius: 15%;
+    --border-color: #2D2D2D;
+    --border-style: solid;
+    --border-width: 1px;
+    color: white;
+    width: 35%;
+}
+
+.contenedorPrecio{
+    margin-top: 5%;
+    margin-left: 7%;
+}
+
+.Cantidad{
+    --border-radius: 15%;
+    --border-color: #2D2D2D;
+    --border-style: solid;
+    --border-width: 1px;
+    color: white;
+    width: 45%;
+}
+
+.contenedorCantidad{
+    margin-top: -32%;
+    margin-left: 40%;
+}
+
+.counter__section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.menos{
+    --background:#1F1F1F;
+}
+
+.mas{
+    --background: #1F1F1F;
+}
+
+
+
+
+  ion-modal#example-modal {
+    --width: fit-content;
+    --min-width: 250px;
+    --height: fit-content;
+    --border-radius: 6px;
+    --box-shadow: 0 28px 48px rgba(0, 0, 0, 0.4);
+  }
+  
+  ion-modal#example-modal h1 {
+    margin: 20px 20px 10px 20px;
+  }
+  
+  ion-modal#example-modal ion-icon {
+    margin-right: 6px;
+  
+    width: 48px;
+    height: 48px;
+  
+    padding: 4px 0;
+  
+    color: #aaaaaa;
+  }
+  
+  ion-modal#example-modal .wrapper {
+    margin-bottom: 10px;
+  }

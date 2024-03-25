@@ -1,0 +1,472 @@
+<ion-menu contentId="main-content">
+    <ion-header>
+        <ion-toolbar color="dark">
+            <ion-title>Configuraciones</ion-title>
+        </ion-toolbar>
+
+    </ion-header>
+    <ion-col>
+        <ion-row>
+            <ion-button class="botones" color="dark">Monedas</ion-button>
+        </ion-row>
+
+        <ion-row>
+            <ion-button class="botones" color="dark" [routerLink]="['/noticias']">Noticias</ion-button>
+        </ion-row>
+        <ion-row>
+            <ion-button class="botones" color="dark" [routerLink]="['/ajuste']">
+                Ajustes
+            </ion-button>
+        </ion-row>
+
+    </ion-col>
+    <ion-button routerLink="/login" color="dark">Cerrar sesion</ion-button>
+</ion-menu>
+<ion-content>
+    <ion-header>
+        <ion-toolbar>
+
+
+            <div class="ion-page" id="main-content">
+                <ion-header>
+                </ion-header>
+            </div>
+
+
+
+            <ion-buttons slot="end">
+                <ion-button class="bordered">
+                    <!--                     <img
+                        src="https://images.vexels.com/media/users/3/150846/isolated/preview/a77bce5e752802277f78088150b16923-musica-de-icono-de-auriculares-de-audio.png" />
+ --> <img src="https://i.ibb.co/dg4GByS/image-removebg-preview-1.png">
+                </ion-button>
+            </ion-buttons>
+        </ion-toolbar>
+
+        <ion-item lines="none" class="nombre">
+            <ion-label class="titlee">
+                <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+                <h3>Space Music</h3>
+            </ion-label>
+        </ion-item>
+    </ion-header>
+
+    <div class="carrusel" data-aos="fade-right">
+        <ion-card routerLink="/tendencias">
+            <ion-card-header>
+                <div class="main">
+                    <img src="assets/Tendencias.png" alt="">
+                </div>
+            </ion-card-header>
+            <ion-card-content class="ion-text-left">
+                <ion-text color="white" class="ion-text-right">
+                    <h2> <!-- Tendencias --></h2>
+                </ion-text>
+            </ion-card-content>
+        </ion-card>
+
+        <ion-card routerLink="/cancion">
+            <ion-card-header>
+
+                <div class="main">
+                    <img src="assets/reggaeton.png" alt="">
+
+                </div>
+
+            </ion-card-header>
+            <ion-card-content class="ion-text-left">
+                <ion-text color="white" class="ion-text-right">
+                    <h2><!-- Regueton --></h2>
+                </ion-text>
+            </ion-card-content>
+        </ion-card>
+
+        <ion-card routerLink="/lista-rancheras">
+            <ion-card-header>
+                <div class="main">
+                    <img src="assets/rancheras.png" alt="">
+                </div>
+            </ion-card-header>
+            <ion-card-content class="ion-text-left" style="background: brown;">
+                <ion-text color="white" class="ion-text-right">
+                    <h2><!-- Rancheras --></h2>
+                </ion-text>
+            </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+            <ion-card-header>
+
+                <div class="main">
+                    <img src="assets/rock and roll.png" alt="">
+
+                </div>
+
+            </ion-card-header>
+            <ion-card-content class="ion-text-left">
+                <ion-text color="white" class="ion-text-right">
+                    <h2><!-- Rock --></h2>
+                </ion-text>
+            </ion-card-content>
+        </ion-card>
+
+        <ion-card routerLink="/lista-cristianas">
+            <ion-card-header>
+                <div class="main">
+                    <img src="assets/Cristianas.png" alt="">
+                </div>
+            </ion-card-header>
+            <ion-card-content class="ion-text-left">
+                <ion-text color="white" class="ion-text-right">
+                    <h2><!-- Cristianas --></h2>
+                </ion-text>
+            </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+            <ion-card-header>
+                <div class="main">
+                    <img src="assets/Jazz.png" alt="">
+                </div>
+            </ion-card-header>
+            <ion-card-content class="ion-text-left">
+                <ion-text color="white" class="ion-text-right">
+                    <h2><!-- Jazz --></h2>
+                </ion-text>
+            </ion-card-content>
+        </ion-card>
+
+        <ion-card routerLink="/lista-rap">
+            <ion-card-header>
+                <div class="main">
+                    <img src="assets/Rap.png" alt="">
+                </div>
+            </ion-card-header>
+            <ion-card-content class="ion-text-left">
+                <ion-text color="white" class="ion-text-right">
+                    <h2><!-- Rap --></h2>
+                </ion-text>
+            </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+            <ion-card-header>
+                <div style="position: relative; width: 100%; height: 0; padding-top: 100.0000%;">
+                    <img src="assets/Trap.png" alt="">
+                </div>
+            </ion-card-header>
+            <ion-card-content class="ion-text-left">
+                <ion-text color="white" class="ion-text-right">
+                    <h2><!-- Trap --></h2>
+                </ion-text>
+            </ion-card-content>
+        </ion-card>
+
+
+    </div>
+
+    <div class="container">
+        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+        <h2 style="color: black;  font-family: 'Russo One', sans-serif;">Favoritos</h2>
+
+        <ion-item lines="none">
+            <ion-grid>
+                <ion-row class="ion-align-items-center">
+                    <ion-col size="3">
+                        <ion-button color="light" fill="clear" class="avatar">
+                            <ion-avatar>
+                                <img alt="Silhouette of a person's head"
+                                    src="https://static.vecteezy.com/system/resources/previews/001/206/550/non_2x/music-cd-png.png" />
+                            </ion-avatar>
+                        </ion-button>
+                    </ion-col>
+                    <ion-col size="7">
+                        <ion-label>
+                            <h4>Cancion 1</h4>
+                            <h6>Autor desconocido</h6>
+                        </ion-label>
+                    </ion-col>
+                    <ion-col size="2">
+                        <ion-button color="black" fill="clear">
+                            <ion-icon name="star"></ion-icon>
+                        </ion-button>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-item>
+
+        <ion-item lines="none">
+            <ion-grid>
+                <ion-row class="ion-align-items-center">
+                    <ion-col size="3">
+                        <ion-button color="light" fill="clear" class="avatar">
+                            <ion-avatar>
+                                <img alt="Silhouette of a person's head"
+                                    src="https://static.vecteezy.com/system/resources/previews/001/206/550/non_2x/music-cd-png.png" />
+                            </ion-avatar>
+                        </ion-button>
+                    </ion-col>
+                    <ion-col size="7">
+                        <ion-label>
+                            <h4>Cancion 2</h4>
+                            <h6>Autor desconocido</h6>
+                        </ion-label>
+                    </ion-col>
+                    <ion-col size="2">
+                        <ion-button color="black" fill="clear">
+                            <ion-icon name="star"></ion-icon>
+                        </ion-button>
+                    </ion-col>
+                </ion-row>
+            </ion-grid> </ion-item><ion-item lines="none">
+            <ion-grid>
+                <ion-row class="ion-align-items-center">
+                    <ion-col size="3">
+                        <ion-button color="light" fill="clear" class="avatar">
+                            <ion-avatar>
+                                <img alt="Silhouette of a person's head"
+                                    src="https://static.vecteezy.com/system/resources/previews/001/206/550/non_2x/music-cd-png.png" />
+                            </ion-avatar>
+                        </ion-button>
+                    </ion-col>
+                    <ion-col size="7">
+                        <ion-label>
+                            <h4>Cancion 3</h4>
+                            <h6>Autor desconocido</h6>
+                        </ion-label>
+                    </ion-col>
+                    <ion-col size="2">
+                        <ion-button color="black" fill="clear">
+                            <ion-icon name="star"></ion-icon>
+                        </ion-button>
+                    </ion-col>
+                </ion-row>
+            </ion-grid> </ion-item><ion-item lines="none">
+            <ion-grid>
+                <ion-row class="ion-align-items-center">
+                    <ion-col size="3">
+                        <ion-button color="light" fill="clear" class="avatar">
+                            <ion-avatar>
+                                <img alt="Silhouette of a person's head"
+                                    src="https://static.vecteezy.com/system/resources/previews/001/206/550/non_2x/music-cd-png.png" />
+                            </ion-avatar>
+                        </ion-button>
+                    </ion-col>
+                    <ion-col size="7">
+                        <ion-label>
+                            <h4>Cancion 4</h4>
+                            <h6>Autor desconocido</h6>
+                        </ion-label>
+                    </ion-col>
+                    <ion-col size="2">
+                        <ion-button color="black" fill="clear">
+                            <ion-icon name="star"></ion-icon>
+                        </ion-button>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-item>
+
+        <ion-item lines="none">
+            <ion-grid>
+                <ion-row class="ion-align-items-center">
+                    <ion-col size="3">
+                        <ion-button color="light" fill="clear" class="avatar">
+                            <ion-avatar>
+                                <img alt="Silhouette of a person's head"
+                                    src="https://static.vecteezy.com/system/resources/previews/001/206/550/non_2x/music-cd-png.png" />
+                            </ion-avatar>
+                        </ion-button>
+                    </ion-col>
+                    <ion-col size="7">
+                        <ion-label>
+                            <h4>Cancion 5</h4>
+                            <h6>Autor desconocido</h6>
+                        </ion-label>
+                    </ion-col>
+                    <ion-col size="2">
+                        <ion-button color="black" fill="clear">
+                            <ion-icon name="star"></ion-icon>
+                        </ion-button>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-item>
+
+        <ion-item lines="none">
+            <ion-grid>
+                <ion-row class="ion-align-items-center">
+                    <ion-col size="3">
+                        <ion-button color="light" fill="clear" class="avatar">
+                            <ion-avatar>
+                                <img alt="Silhouette of a person's head"
+                                    src="https://static.vecteezy.com/system/resources/previews/001/206/550/non_2x/music-cd-png.png" />
+                            </ion-avatar>
+                        </ion-button>
+                    </ion-col>
+                    <ion-col size="7">
+                        <ion-label>
+                            <h4>Cancion 6</h4>
+                            <h6>Autor desconocido</h6>
+                        </ion-label>
+                    </ion-col>
+                    <ion-col size="2">
+                        <ion-button color="black" fill="clear">
+                            <ion-icon name="star"></ion-icon>
+                        </ion-button>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-item>
+
+        <ion-item lines="none">
+            <ion-grid>
+                <ion-row class="ion-align-items-center">
+                    <ion-col size="3">
+                        <ion-button color="light" fill="clear" class="avatar">
+                            <ion-avatar>
+                                <img alt="Silhouette of a person's head"
+                                    src="https://static.vecteezy.com/system/resources/previews/001/206/550/non_2x/music-cd-png.png" />
+                            </ion-avatar>
+                        </ion-button>
+                    </ion-col>
+                    <ion-col size="7">
+                        <ion-label>
+                            <h4>Cancion 7</h4>
+                            <h6>Autor desconocido</h6>
+                        </ion-label>
+                    </ion-col>
+                    <ion-col size="2">
+                        <ion-button color="black" fill="clear">
+                            <ion-icon name="star"></ion-icon>
+                        </ion-button>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-item>
+
+        <ion-item lines="none">
+            <ion-grid>
+                <ion-row class="ion-align-items-center">
+                    <ion-col size="3">
+                        <ion-button color="light" fill="clear" class="avatar">
+                            <ion-avatar>
+                                <img alt="Silhouette of a person's head"
+                                    src="https://static.vecteezy.com/system/resources/previews/001/206/550/non_2x/music-cd-png.png" />
+                            </ion-avatar>
+                        </ion-button>
+                    </ion-col>
+                    <ion-col size="7">
+                        <ion-label>
+                            <h4>Cancion 8</h4>
+                            <h6>Autor desconocido</h6>
+                        </ion-label>
+                    </ion-col>
+                    <ion-col size="2">
+                        <ion-button color="black" fill="clear">
+                            <ion-icon name="star"></ion-icon>
+                        </ion-button>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-item>
+
+        <ion-item lines="none">
+            <ion-grid>
+                <ion-row class="ion-align-items-center">
+                    <ion-col size="3">
+                        <ion-button color="light" fill="clear" class="avatar">
+                            <ion-avatar>
+                                <img alt="Silhouette of a person's head"
+                                    src="https://static.vecteezy.com/system/resources/previews/001/206/550/non_2x/music-cd-png.png" />
+                            </ion-avatar>
+                        </ion-button>
+                    </ion-col>
+                    <ion-col size="7">
+                        <ion-label>
+                            <h4>Cancion 9</h4>
+                            <h6>Autor desconocido</h6>
+                        </ion-label>
+                    </ion-col>
+                    <ion-col size="2">
+                        <ion-button color="black" fill="clear">
+                            <ion-icon name="star"></ion-icon>
+                        </ion-button>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-item>
+
+        <ion-item lines="none">
+            <ion-grid>
+                <ion-row class="ion-align-items-center">
+                    <ion-col size="3">
+                        <ion-button color="light" fill="clear" class="avatar">
+                            <ion-avatar>
+                                <img alt="Silhouette of a person's head"
+                                    src="https://static.vecteezy.com/system/resources/previews/001/206/550/non_2x/music-cd-png.png" />
+                            </ion-avatar>
+                        </ion-button>
+                    </ion-col>
+                    <ion-col size="7">
+                        <ion-label>
+                            <h4>Cancion 10</h4>
+                            <h6>Autor desconocido</h6>
+                        </ion-label>
+                    </ion-col>
+                    <ion-col size="2">
+                        <ion-button color="black" fill="clear">
+                            <ion-icon name="star"></ion-icon>
+                        </ion-button>
+                    </ion-col>
+                </ion-row>
+            </ion-grid> </ion-item><ion-item lines="none">
+            <ion-grid>
+                <ion-row class="ion-align-items-center">
+                    <ion-col size="3">
+                        <ion-button color="light" fill="clear" class="avatar">
+                            <ion-avatar>
+                                <img alt="Silhouette of a person's head"
+                                    src="https://static.vecteezy.com/system/resources/previews/001/206/550/non_2x/music-cd-png.png" />
+                            </ion-avatar>
+                        </ion-button>
+                    </ion-col>
+                    <ion-col size="7">
+                        <ion-label>
+                            <h4>Cancion 11</h4>
+                            <h6>Autor desconocido</h6>
+                        </ion-label>
+                    </ion-col>
+                    <ion-col size="2">
+                        <ion-button color="black" fill="clear">
+                            <ion-icon name="star"></ion-icon>
+                        </ion-button>
+                    </ion-col>
+                </ion-row>
+            </ion-grid> </ion-item><ion-item lines="none">
+            <ion-grid>
+                <ion-row class="ion-align-items-center">
+                    <ion-col size="3">
+                        <ion-button color="light" fill="clear" class="avatar">
+                            <ion-avatar>
+                                <img alt="Silhouette of a person's head"
+                                    src="https://static.vecteezy.com/system/resources/previews/001/206/550/non_2x/music-cd-png.png" />
+                            </ion-avatar>
+                        </ion-button>
+                    </ion-col>
+                    <ion-col size="7">
+                        <ion-label>
+                            <h4>Cancion 12</h4>
+                            <h6>Autor desconocido</h6>
+                        </ion-label>
+                    </ion-col>
+                    <ion-col size="2">
+                        <ion-button color="black" fill="clear">
+                            <ion-icon name="star"></ion-icon>
+                        </ion-button>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-item>
+    </div>
+</ion-content>

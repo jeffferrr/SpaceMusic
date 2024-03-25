@@ -1,0 +1,7 @@
+{
+  "name": "LoginTaquira",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

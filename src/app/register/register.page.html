@@ -1,0 +1,134 @@
+<ion-content>
+  <div id="header">
+    <div class="stars">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+    </div>
+    <div id="app-bar">
+      <div id="logo">
+        <img src="assets/stronauta.png" alt="">
+      </div>
+      <div></div>
+    </div>
+    <h1>Registrate</h1>
+  </div>
+
+  <div class="wrapper">
+    <ion-card class="form-wrapper">
+      <ion-card-content>
+        <form [formGroup]="formularioRegister">
+          <ion-item>
+            <ion-icon name="person"></ion-icon>
+            <ion-input formControlName="nombre" type="text" placeholder="Nombre" minlength="4"></ion-input>
+            <!-- 
+              <ion-item class="alert alert-danger mt-2" [hidden]="nombre.valid || nombre.pristine">
+              El usuario es obligatorio
+            </ion-item> 
+ -->
+
+          </ion-item>
+          <ion-item>
+            <ion-icon name="mail"></ion-icon>
+            <ion-input formControlName="email" type="text" placeholder="Correo Electronico"></ion-input>
+            <!-- 
+            <span *ngIf="email.errors?.['required']">
+              El email es obligatorio
+            </span>
+
+            <span *ngIf="email.errors?.['email']">
+              El email debe ser valido
+            </span> -->
+
+            <span></span>
+
+          </ion-item>
+          <ion-item>
+            <ion-icon name="lock-closed"></ion-icon>
+            <ion-input formControlName="password" type="password" placeholder="Contraseña" autocomplete="new-password"
+              minlength="4"></ion-input>
+          </ion-item>
+
+          <!-- Cuando el usuario ingresus sus datos completos dara clic en iniciar sesion y lo redireccionara a la pagina principal de la app -->
+          <ion-buttons slot="end">
+            <ion-button (click)="guardar()"><ion-icon name="person-add-outline"></ion-icon>Registrarme</ion-button>
+          </ion-buttons>
+          <!-- Redirecciona al usuario ala pagina de registro en dado caso que quiera crear una cuenta -->
+          <ion-buttons slot="end">
+            <ion-button [routerLink]="['/login']"><ion-icon name="play-outline"></ion-icon>Ya tengo una
+              cuenta</ion-button>
+          </ion-buttons>
+        </form>
+      </ion-card-content>
+    </ion-card>
+
+    <div class="line-text">
+      <span class="lines"></span>
+      <span class="text">O registrate a travez de:</span>
+    </div>
+    <ion-card class="social-wrapper">
+      <ion-card-content>
+        <div class="socials">
+
+          <a href="https://www.facebook.com/"> <ion-button class="btn-fb" id="hola"><ion-icon
+                name="logo-facebook"></ion-icon> </ion-button></a>
+
+          <a
+            href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAlAmgQ&hl=es-419&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-1274602577%3A1690821696198611">
+            <ion-button class="btn-go"><ion-icon name="logo-google"></ion-icon>
+            </ion-button></a>
+
+
+
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

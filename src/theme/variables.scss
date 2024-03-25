@@ -1,0 +1,78 @@
+:root {
+
+    /** mycolorbasic **/
+    --ion-color-fondogod: #4125b5;
+	--ion-color-fondogod-rgb: 65,37,181;
+	--ion-color-fondogod-contrast: #ffffff;
+	--ion-color-fondogod-contrast-rgb: 255,255,255;
+	--ion-color-fondogod-shade: #39219f;
+	--ion-color-fondogod-tint: #543bbc;
+
+    $colors:(
+        primary: #488aff,
+        secondary:#32db64,
+        danger: #f53d3d,
+        light: #f4f4f4,
+        
+    );
+}
+
+
+ion-content{
+    --background: #2b159e;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    
+
+    .header{
+    padding: 1rem 0.5rem;
+    color:#fff;
+    }
+}
+
+.card{
+    height: 75%;
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    border-radius: 40px 0px 0 0;
+    padding: 25px;
+
+}
+
+ion-searchbar{
+    background-color: #4125b5;
+    border-radius: 45px;
+    color:#fff;
+}
+
+
+ion-list{
+    position:relative;
+    padding-top:50px;
+    border-radius: 40px 0px 0 0;
+}
+
+
+ion-back-button{
+    width: 35px;
+    height: 35px;
+
+}
+
+.lalista{
+    color: #fff;
+    font-size:65%;
+
+}
+
+.mitad{
+    padding: 22%;
+}
+
+.rayo{
+    color:#4125b5;
+    width:50%;
+    height:50%;
+    
+}
